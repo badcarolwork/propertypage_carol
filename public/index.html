@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Sanctuary</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <nav class="bg-white shadow-md p-4 fixed w-full z-10 h-[80px]">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <img src="images/company.png" alt="Company Logo" class="h-10">
+            <div class="flex items-center space-x-6 md:space-x-10">
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#features" class="text-gray-700 hover:text-[#669999]">Features</a></li>
+                    <li><a href="#projects" class="text-gray-700 hover:text-[#669999]">Projects</a></li>
+                </ul>
+                <a href="#register" class="bg-bg-main text-white px-4 py-2 hover:bg-[#A3C9C8] text-[16px]">Register</a>
+
+                <button id="menu-btn" class="md:hidden bg-mint-500 focus:outline-none w-7" aria-controls="mobile-menu"
+                    aria-expanded="false" data-collapse-toggle="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+        <ul id="mobile-menu"
+            class="absolute top-[80px] left-0 w-full bg-white shadow-md overflow-hidden max-h-0 transition-all duration-300 ease-in-out md:hidden flex flex-col items-center">
+            <li><a href="#features" class="block py-2 text-gray-700 hover:text-[#669999]">Features</a></li>
+            <li class="pb-2"><a href="#projects" class="block py-2 text-gray-700 hover:text-[#669999]">Projects</a></li>
+        </ul>
+    </nav>
+
+    <main class="pt-16">
+        <section id="home" class="p-10 text-white h-[70vh] relative bg-black">
+            <div class="md:hidden mobile-bg"> </div>
+            <div class="flex items-center justify-center md:h-full md:justify-start ">
+                <div id="text-container" class="text-center mt-[4rem] md:mt-0 md:w-[30%] md:text-left md:ms-10 ">
+                    <p class="text-[#000] text-center text-[24px] md:text-white md:text-left">Live in a</p>
+                    <h1 id="headline" class="text-7xl text-[#669999] md:text-white md:text-left">Nature Sanctuary
+                    </h1>
+                    <p class="mt-2 text-[#000] text-[16px] md:text-white md:text-left">Lavishly designed with private
+                        gardens, canals
+                        and a 20-acre
+                        greenhouse.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-section" id="township">
+            <div class="max-w-7xl mx-auto py-5">
+                <div class="hidden md:block desktop-bg-top"></div>
+                <h3 class="text-2xl font-bold" id="features">Natural Wonders</h3>
+                <div class="title text-center text-white">
+                    <p>A township flanked by</p>
+                    <h1 class="text-secondary">Natural Wonders</h1>
+                </div>
+                <div id="mapAnimateBox" class="my-10 pb-[7rem] relative md:mt-10 md:mb-0">
+                    <img id="mainMap" src="images/map.png" alt="Map of Nature Sanctuary"
+                        class="mt-4 max-w-[313px] md:max-w-[480px] lg:max-w-[687px] h-auto m-auto ">
+
+                    <div id="mobileIcon" class="md:hidden">
+                        <div id="" class="mapIcon1 absolute w-[40%] top-[52%] left-[10%]">
+                            <div class="mt-[50px]">
+                                <img src="images/highway2.png" alt="highway" class="w-[25%] m-auto ">
+                                <div class="text-center text-white mt-3">
+                                    Interchange with <span class="text-[#7DBAB9]">SOME</span> Highway
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="" class="mapIcon2 absolute w-[40%] top-[45%] left-[55%]">
+                            <div class="mt-[65%]">
+                                <img src="images/car.png" alt="car" class="w-[20%] m-auto">
+                                <div class="text-center text-white mt-3">
+                                    Direct Link to <span class="text-[#7DBAB9]"> <br />
+                                        Kuala Lumpur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="desktopIcon" class="hidden md:block">
+                        <div id=""
+                            class="mapIcon1 absolute md:w-[27%] md:top-[30%] md:right-[0] lg:w-[20%] lg:top-[41%] lg:right-[4%] flex ">
+                            <div class="lg:w-[50%] md:w-[59%] h-full"></div>
+                            <div class="">
+                                <img src="images/highway2.png" alt="highway" class="w-[25%] m-auto">
+                                <div class="text-center text-white mt-3 text-[14px]">
+                                    Interchange with <span class="text-[#7DBAB9]">SOME</span> Highway
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id=""
+                            class="mapIcon2 absolute md:w-[24%] lg:w-[20%] md:top-[18%] md:left-[-4%] lg:top-[26%] lg:left-[4%] flex">
+                            <div class="w-[50%] h-full"></div>
+                            <div class="pb-[19%]">
+                                <img src=" images/car.png" alt="car" class="w-[35%] m-auto ">
+                                <div class="text-center text-white mt-3 text-[14px]">
+                                    Direct Link to <span class="text-[#7DBAB9]"> <br />
+                                        Kuala Lumpur</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="text-white w-[70%] m-auto text-center text-[16px]">Designed to be the city of
+                    the future
+                    - a
+                    complete township.
+                </p>
+
+                <div id="featuesList" class="w-[98%] m-auto my-10 flex flex-wrap gap-1 justify-center md:flex-nowrap ">
+                    <div class="list-item rounded-lg shadow-lg">
+                        <img src="images/park.png" alt="Park">
+                        <div class="justify-center text-white mt-3">
+                            Central Park <br />
+                            <span class="text-secondary">at your doorstep</span>
+                        </div>
+                    </div>
+                    <div class="list-item rounded-lg shadow-lg">
+                        <img src="images/highway.png" alt="Park">
+                        <div class="justify-center text-white mt-3">
+                            Easy access to <br />
+                            <span class="text-secondary">major highways</span>
+                        </div>
+                    </div>
+                    <div class="list-item rounded-lg shadow-lg">
+                        <img src="images/wetlands.png" alt="Park" class="m-2">
+                        <div class="justify-center text-white mt-3">
+                            Next to <br />
+                            <span class="text-secondary">a large wetland</span>
+                        </div>
+                    </div>
+                    <div class="list-item rounded-lg shadow-lg">
+                        <img src="images/location.png" alt="Park" class="m-2">
+                        <div class="justify-center text-white mt-3">
+                            Strategically<br />
+                            <span class="text-secondary">located in KL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="pb-10">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-white z-[-1]"></div>
+            <div class="absolute bottom-0 left-0 w-full h-1/2 bg-[#06121D] z-[-1]"></div>
+            <div class="md:hidden mobile-bg"></div>
+            <div class="desktop-bg-bottom hidden md:block"></div>
+            <div class="max-w-7xl mx-auto py-5">
+                <div id="copiesBox" class="mx-auto w-[90%] text-center">
+                    <h1 class="title text-headline">Newly Launched Homes</h1>
+                    <hr class="bg-headline w-[30%] h-1 my-7 m-auto md:w-[20%] md:my-5 border-0" />
+                    <p class="text-[14px]">Our exclusive range of custom designed homes</p>
+                </div>
+
+                <div id="projectList" class="pt-8 pb-12 w-[90%] m-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        <div class="bg-white shadow-md overflow-hidden">
+                            <img src="images/house01.png" alt="House 1" class="w-full h-auto max-h-[287px]">
+                            <div class="card-body">
+                                <div class="top px-5 border-b border-gray-300">
+                                    <h4 class="text-xl mt-5 mb-3 text-project ">Palm Springs</h4>
+                                    <div class="flex content-center items-center mb-6">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5">
+                                        <div class="ms-3">2-storey Terrace Homes</div>
+                                    </div>
+                                </div>
+
+                                <div class="middle px-5 pt-5 pb-6">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div
+                                        class="grid grid-cols-2 border-y border-gray-300 divide-x divide-gray-300 text-left w-full max-w-md">
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Price from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM600,000<span
+                                                    class="text-sm align-super">*</span></p>
+                                        </div>
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Monthly Repayment from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM3,XXX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-box flex justify-around my-5 px-5">
+                                    <button class="border border-[#669999] text-[#669999] py-2 rounded-md w-[45%]">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5 inline-block">
+                                        Features
+                                    </button>
+                                    <button
+                                        class="border-0 bg-[#669999] text-white py-2 rounded-md w-[45%]">Register</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white shadow-md">
+                            <img src="images/house02.png" alt="House 1" class="w-full h-auto max-h-[287px]">
+                            <div class="card-body">
+                                <div class="top px-5 border-b border-gray-300">
+                                    <h4 class="text-xl mt-5 mb-3 text-project ">Southern Water</h4>
+                                    <div class="flex content-center items-center mb-6">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5">
+                                        <div class="ms-3">Waterfront Bungalow</div>
+                                    </div>
+                                </div>
+
+                                <div class="middle px-5 pt-5 pb-6">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div
+                                        class="grid grid-cols-2 border-y border-gray-300 divide-x divide-gray-300 text-left w-full max-w-md">
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Price from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM2,600,000<span
+                                                    class="text-sm align-super">*</span></p>
+                                        </div>
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Monthly Repayment from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM1X,XXX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-box flex justify-around my-5 px-5">
+                                    <button class="border border-[#669999] text-[#669999] py-2 rounded-md w-[45%]">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5 inline-block">
+                                        Features
+                                    </button>
+                                    <button
+                                        class="border-0 bg-[#669999] text-white py-2  rounded-md w-[45%]">Register</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--- show more -->
+                        <div class="bg-white shadow-md">
+                            <img src="images/house03.png" alt="House 1" class="w-full h-auto max-h-[287px]">
+                            <div class="card-body">
+                                <div class="top px-5 border-b border-gray-300">
+                                    <h4 class="text-xl mt-5 mb-3 text-project ">The Ruums</h4>
+                                    <div class="flex content-center items-center mb-6">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5">
+                                        <div class="ms-3">Semi-Detached Homes</div>
+                                    </div>
+                                </div>
+
+                                <div class="middle px-5 pt-5 pb-6">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+
+                                <div class="bottom">
+                                    <div
+                                        class="grid grid-cols-2 border-y border-gray-300 divide-x divide-gray-300 text-left w-full max-w-md">
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Price from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM1,000,000<span
+                                                    class="text-sm align-super">*</span></p>
+                                        </div>
+                                        <div class="p-4">
+                                            <p class="text-black text-[11px]">Monthly Repayment from</p>
+                                            <p class="text-secondary text-xl font-bold text-price">RM1X,XXX</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-box flex justify-around my-5 px-5">
+                                    <button class="border border-[#669999] text-[#669999] py-2 rounded-md w-[45%]">
+                                        <img src="images/icon-home.png" alt="Home Icon" class="w-5 inline-block">
+                                        Features
+                                    </button>
+                                    <button
+                                        class="border-0 bg-[#669999] text-white py-2  rounded-md w-[45%]">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center my-10">
+                    <button class="border-0 bg-[#669999] text-white py-3 px-8 rounded-md m-auto">More
+                        Homes</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="register">
+            <div class="max-w-7xl mx-auto py-5">
+                <div class="w-[90%] m-auto text-center pb-10">
+                    <h3 class="title text-headline">Register Now</h3>
+                    <p class="text-[15px]">Our sales team will be in touch with you shortly</p>
+                </div>
+
+                <form class="mx-auto pt-10 space-y-10 w-[80%] md:w-[50%] ">
+                    <div class="relative z-0 w-full group">
+                        <input type="text" name="name" id="name"
+                            class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-black appearance-none text-black focus:border-[#669999] focus:outline-none focus:ring-0 focus:border-[#669999] peer"
+                            placeholder=" " required />
+                        <label for="name"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#669999] peer-focus:text-[#070808] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                            Your Name
+                        </label>
+                        <p class="mt-2 hidden [.validated_&]:peer-invalid:block text-pink-600">
+                            Please provide your name.
+                        </p>
+                    </div>
+                    <div class="relative z-0 w-full group">
+                        <input type="tel" name="contact-number" id="contact-number"
+                            class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-black appearance-none text-black focus:border-[#669999] focus:outline-none focus:ring-0 focus:border-[#669999] peer"
+                            placeholder=" " required pattern="[0-9]{10}" />
+                        <label for="contact-number"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#669999] peer-focus:text-[#070808] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                            Phone Number (e.g: 0161234567)</label>
+                        <p class="mt-2 hidden [.validated_&]:peer-invalid:block text-pink-600">
+                            Please provide your contact number.
+                        </p>
+                        <p
+                            class="mt-2 hidden [.validated_&]:peer-[:not(:placeholder-shown)]:peer-invalid:block text-pink-600">
+                            Please enter a valid contact number.
+                        </p>
+                    </div>
+                    <div class="relative z-0 w-full group">
+                        <input type="email" name="email-add" id="email-add"
+                            class="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-black appearance-none text-black focus:border-[#669999] focus:outline-none focus:ring-0 focus:border-[#669999] peer"
+                            placeholder=" " required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                        <label for="email-add"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#669999] peer-focus:text-[#070808] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your
+                            Email Address</label>
+                        <p class="mt-2 hidden [.validated_&]:peer-invalid:block text-pink-600">
+                            Please provide your email.
+                        </p>
+                        <p
+                            class="mt-2 hidden [.validated_&]:peer-[:not(:placeholder-shown)]:peer-invalid:block text-pink-600">
+                            Please enter a valid email address.
+                        </p>
+                    </div>
+                    <div class="relative z-0 w-full group">
+                        <select name="project" id="project"
+                            class="form-select block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b border-black appearance-none text-gray-500 focus:border-[#669999] focus:outline-none focus:ring-0 focus:border-[#669999] peer"
+                            placeholder=" " required>
+                            <option value="" disabled selected class="text-gray-500">Choose Project</option>
+                            <option value="Palm Springs">Palm Springs</option>
+                            <option value="Southern Water">Southern Water</option>
+                            <option value="The Ruums">The Ruums</option>
+                        </select>
+                        <!-- <label for="project"
+                            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-[#669999] peer-focus:text-[#070808] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Choose
+                            Porject</label> -->
+                        <p
+                            class="mt-2 hidden [.validated_&]:peer-[:not(:placeholder-shown)]:peer-invalid:block text-pink-600">
+                            Please select a project.
+                        </p>
+                    </div>
+                    <button id="formSubmit" type="submit"
+                        class="bg-[#669999] m-auto block  text-white py-3 px-[3rem] rounded-md ]">SUBMIT</button>
+                </form>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#06121D] text-white text-center p-4 mt-10">
+        <div class="max-w-7xl mx-auto py-5">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-5 m-auto w-[90%]">
+                <div id="address" class="flex items-top text-left py-5 col-span-6 sm:col-span-4 md:col-span-1">
+                    <img src="./images/icon location.png" alt="Location" class="h-[25px]">
+                    <div class="ps-5">
+                        Unit C-3-7, Block C,<br />
+                        Pacific Place Commercial Centre,<br />
+                        Jalan PJU 1A/4, Ara Damansara,<br />
+                        47301 Petaling Jaya.
+                    </div>
+                </div>
+                <div id="bizHour" class="flex items-top text-left py-5 col-span-6 sm:col-span-4 md:col-span-1">
+                    <img src="images/time.png" alt="Location" class="h-[25px]">
+                    <div class="ps-5">
+                        Mon - Fri I 9 AM - 6 PM <br />
+                        Sat - Sun I 10 AM - 5PM
+                    </div>
+                </div>
+                <div id="contact" class="flex items-top text-left py-5 col-span-6 sm:col-span-4 md:col-span-1">
+                    <img src="images/phone.png" alt="Location" class="h-[25px]">
+                    <div class="ps-5">
+                        03 1234 1234
+                    </div>
+                </div>
+                <div id="developer" class="text-left py-5 col-span-6 sm:col-span-4 md:col-span-1 hidden md:block">
+                    <p>A Development by</p>
+                    <img src="images/logo.png" alt="Location" class="h-[35px] mt-5">
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center text-[#9E9E9E] text-center pt-10 pb-5">
+                <p>&copy; Digital Symphony 2024 </p>
+                <span class="hidden md:block mx-2"> | </span>
+                <p p="md:ml-4">DISCLAIMER | PRIVACY POLICY</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/nav.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/scrollReveal.js"></script>
+    <script src="scripts/formValidation.js"></script>
+</body>
+
+</html>

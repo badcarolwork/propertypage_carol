@@ -1,0 +1,200 @@
+@import "~tailwindcss/preflight";
+@import "~tailwindcss/utilities";
+@import "~tailwindcss/theme";
+
+/* Import fonts */
+
+@font-face {
+    font-family: "Berlingske";
+    src: url("fonts/BerlingskeSerif-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-bold";
+    src: url("fonts/Poppins-Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Poppins-Exbold";
+    src: url("fonts/Poppins-ExtraBold.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+p,
+form {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+option {
+    padding-left: 1rem;
+}
+.title {
+    font-family: "Berlingske", serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.bg-bg-main {
+    background-color: #669999;
+}
+.text-headline {
+    color: #669999;
+}
+.text-project {
+    color: #113558;
+}
+.bg-headline {
+    background-color: #669999;
+}
+.bg-section {
+    background-color: #111822;
+}
+.text-secondary {
+    color: #7dbab9;
+}
+p {
+    font-family: "Poppins", sans-serif;
+}
+section {
+    position: relative;
+    min-height: 50vh;
+    padding-top: 50px;
+}
+
+.mobile-bg {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-image: url("images/element.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 79%;
+    left: -153px;
+    top: 0;
+    transform: scale(-1, -1);
+}
+.desktop-bg-bottom,
+.desktop-bg-top {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-image: url("images/element.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 30%;
+    right: 0;
+    bottom: 0;
+}
+.desktop-bg-top {
+    background-position: bottom top;
+    left: 0;
+    top: 0;
+    transform: scale(-1, -1);
+}
+
+#home {
+    background-image: url("images/bannerMobile.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 1000px;
+    overflow: hidden;
+
+    h1 {
+        font-family: "Berlingske", serif;
+        font-size: 5rem;
+    }
+}
+
+#township {
+    font-family: "Poppins", sans-serif;
+    .title {
+        h1 {
+            font-family: "Berlingske", serif;
+            font-size: 3rem;
+        }
+    }
+    #desktopIcon {
+        .mapIcon1 {
+            background-image: url("images/section2-pc-icon1.png");
+            background-size: 35% auto;
+            background-position: 0 55%;
+        }
+        .mapIcon2 {
+            background-image: url("images/section2-pc-icon2.png");
+            background-position: 100% 100%;
+            background-size: 35% auto;
+        }
+    }
+    .mapIcon1 {
+        background-image: url("images/section2-icon1.png");
+        background-repeat: no-repeat;
+        background-position: 80% 0;
+        background-size: 50% auto;
+    }
+    .mapIcon2 {
+        background-image: url("images/section2-icon2.png");
+        background-repeat: no-repeat;
+        background-position: 48% 22%;
+        background-size: auto 35%;
+    }
+    #featuesList {
+        .list-item {
+            background-color: #151e35;
+            width: 46%;
+            min-height: 46%;
+            margin: 5px;
+            text-align: center;
+            padding: 1rem;
+            font-family: poppins, sans-serif;
+
+            img {
+                width: auto;
+                height: 70px;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}
+#projects {
+    font-family: "Poppins", sans-serif;
+    h1.title {
+        font-family: "Berlingske", serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .card-body {
+        h4 {
+            font-family: "poppins-Exbold", sans-serif;
+        }
+        .text-price {
+            font-family: "Poppins-bold", sans-serif;
+        }
+    }
+}
+#successMsg {
+    background-color: rgba(102, 153, 153, 0.15);
+}
+footer {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+}
+@media (min-width: 768px) {
+    #home {
+        background-image: url("images/bannerDesktop.png");
+    }
+}
